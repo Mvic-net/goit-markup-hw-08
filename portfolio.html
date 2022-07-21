@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--fonts start-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!--fonts end-->
+    <!--normalise start-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <!--normalise end-->
+    <!--custom styles satrt-->
+    <link rel="stylesheet" href="./CSS/main.min.css" />
+    <link rel="stylesheet" href="./CSS/styles.css" />
+    <!--custom styles end-->
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <!--Шапка сайта-->
+    <header class="header pf-header">
+      <div class="container main-nav">
+        <nav class="site-nav">
+          <a class="link logo" href="./index.html" title="HomePage"> Web<span>Studio</span> </a>
+          <ul class="list site-link">
+            <li class="item"><a class="link" href="./index.html">Студия</a></li>
+            <li class="item"><a class="link current" href="./portfolio.html">Портфолио</a></li>
+            <li class="item"><a class="link" href="">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="list contact-link contact-flex">
+          <li class="item">
+            <a class="link" href="mailto:info@devstudio.com">
+              <svg class="contact-linc-icon" height="12px" width="16px">
+                <use href="./images/symbol-defs.svg#mail-icon"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="item">
+            <a class="link" href="tel:+380961111111">
+              <svg class="contact-linc-icon" height="16px" width="10px">
+                <use href="./images/symbol-defs.svg#tel-icon"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!--герой-->
+    <main>
+      <!--Портфолио-->
+      <section class="section">
+        <div class="pf-container">
+          <h1 class="pf-title" hidden>Портфолио</h1>
+          <!--фильтры-->
+          <ul class="list filter-flex">
+            <li class="pf-item">
+              <button class="portfolio-btn current" type="button">Все</button>
+            </li>
+            <li class="pf-item">
+              <button class="portfolio-btn" type="button">Веб-сайты</button>
+            </li>
+            <li class="pf-item">
+              <button class="portfolio-btn" type="button">Приложения</button>
+            </li>
+            <li class="pf-item">
+              <button class="portfolio-btn" type="button">Дизайн</button>
+            </li>
+            <li class="pf-item">
+              <button class="portfolio-btn" type="button">Маркетинг</button>
+            </li>
+          </ul>
+          <!--Портфолио примеры работ-->
+          <ul class="list flex-container">
+            <li class="flex-element">
+              <div class="pf-card">
+                <img
+                  class="img-example"
+                  src="./images/portfolio/img-1.jpg"
+                  alt="Пример веб-сайта"
+                  width="370"
+                  height="294"
+                />
+                <div class="pf-overlay is-hidden">
+                  <p class="pf-description">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+              </div>
+              <div class="example-descripion">
+                <h2 class="example-title">Технокряк</h2>
+                <p class="about-example">Веб-сайт</p>
+              </div>
+            </li>
+            <li class="flex-element">
+              <div class="pf-card">
+                <img
+                  class="img-example"
+                  src="./images/portfolio/img-2.jpg"
+                  alt="Пример Дизайна"
+                  width="370"
+                  height="294"
+                />
+                <div class="pf-overlay is-hidden">
+                  <p class="pf-description">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+              </div>
+              <div class="example-descripion">
+                <h2 class="example-title">Постер New Orlean vs Golden Star</h2>
+                <p class="about-example">Дизайн</p>
+              </div>
+            </li>
+            <li class="flex-element">
+              <div class="pf-card">
+                <img
+                  class="img-example"
+                  src="./images/portfolio/img-3.jpg"
+                  alt="Пример приложения"
+                  width="370"
+                  height="294"
+                />
+                <div class="pf-overlay is-hidden">
+                  <p class="pf-description">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+              </div>
+              <div class="example-descripion">
+                <h2 class="example-title">Ресторан Seafood</h2>
+                <p class="about-example">Приложение</p>
+              </div>
+            </li>
+            <li class="flex-element">
+              <div class="pf-card">
+                <img
+                  class="img-example"
+                  src="./images/portfolio/img-4.jpg"
+                  alt="Пример маркетинг"
+                  width="370"
+                  height="294"
+                />
+                <div class="pf-overlay is-hidden">
+                  <p class="pf-description">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+              </div>
+              <div class="example-descripion">
+                <h2 class="example-title">Проект Prime</h2>
+                <p class="about-example">Маркетинг</p>
+              </div>
+            </li>
+            <li class="flex-element">
+              <div class="pf-card">
+                <img
+                  class="img-example"
+                  src="./images/portfolio/img-5.jpg"
+                  alt="Пример приложения"
+                  width="370"
+                  height="294"
+                />
+                <div class="pf-overlay is-hidden">
+                  <p class="pf-description">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+              </div>
+              <div class="example-descripion">
+                <h2 class="example-title">Проект Boxes</h2>
+                <p class="about-example">Приложение</p>
+              </div>
+            </li>
+            <li class="flex-element">
+              <div class="pf-card">
+                <img
+                  class="img-example"
+                  src="./images/portfolio/img-6.jpg"
+                  alt="Пример веб-сайта"
+                  width="370"
+                  height="294"
+                />
+                <div class="pf-overlay is-hidden">
+                  <p class="pf-description">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+              </div>
+              <div class="example-descripion">
+                <h2 class="example-title">Inspiration has no Borders</h2>
+                <p class="about-example">Веб-сайт</p>
+              </div>
+            </li>
+            <li class="flex-element">
+              <div class="pf-card">
+                <img
+                  class="img-example"
+                  src="./images/portfolio/img-7.jpg"
+                  alt="Пример дизайна"
+                  width="370"
+                  height="294"
+                />
+                <div class="pf-overlay is-hidden">
+                  <p class="pf-description">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+              </div>
+              <div class="example-descripion">
+                <h2 class="example-title">Издание Limited Edition</h2>
+                <p class="about-example">Дизайн</p>
+              </div>
+            </li>
+            <li class="flex-element">
+              <div class="pf-card">
+                <img
+                  class="img-example"
+                  src="./images/portfolio/img-8.jpg"
+                  alt="Пример маркетинг"
+                  width="370"
+                  height="294"
+                />
+                <div class="pf-overlay is-hidden">
+                  <p class="pf-description">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+              </div>
+              <div class="example-descripion">
+                <h2 class="example-title">Проект LAB</h2>
+                <p class="about-example">Маркетинг</p>
+              </div>
+            </li>
+            <li class="flex-element">
+              <div class="pf-card">
+                <img
+                  class="img-example"
+                  src="./images/portfolio/img-9.jpg"
+                  alt="Пример приложения"
+                  width="370"
+                  height="294"
+                />
+                <div class="pf-overlay is-hidden">
+                  <p class="pf-description">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+              </div>
+              <div class="example-descripion">
+                <h2 class="example-title">Growing Business</h2>
+                <p class="about-example">Приложение</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!--Footer-->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-contacts">
+          <a class="link logo" href="./index.html" title="HomePage"> Web<span>Studio</span> </a>
+          <address class="adds">г. Киев, пр-т Леси Украинки, 26</address>
+          <ul class="list contact-link">
+            <li class="footer-contact">
+              <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li class="footer-contact">
+              <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-social-link">
+          <strong class="footer-title">присоединяйтесь</strong>
+          <ul class="social-networks social-networks--mt list">
+            <li class="social-networks__item item">
+              <a
+                class="social-networks__link social-networks__link--mode-dark link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="instagram"
+              >
+                <svg class="social-linc-icon" height="20px" width="20px">
+                  <use href="./images/symbol-defs.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-networks__item item">
+              <a
+                class="social-networks__link social-networks__link--mode-dark link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="twitter"
+              >
+                <svg class="social-linc-icon" height="20px" width="20px">
+                  <use href="./images/symbol-defs.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-networks__item item">
+              <a
+                class="social-networks__link social-networks__link--mode-dark link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="facebook"
+              >
+                <svg class="social-linc-icon" height="20px" width="20px">
+                  <use href="./images/symbol-defs.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-networks__item item">
+              <a
+                class="social-networks__link social-networks__link--mode-dark link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="linkedin"
+              >
+                <svg class="social-linc-icon" height="20px" width="20px">
+                  <use href="./images/symbol-defs.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <form class="footer-form" name="subscribe-form">
+          <strong class="footer-subscribe-form">Подпишитесь на рассылку</strong>
+          <label>
+            <input class="footer-form-email" type="email" name="user-email" placeholder="E-mail" />
+          </label>
+          <button class="footer-form-btn" type="submit">
+            <span class="subscribe">Подписаться</span>
+            <svg class="send" height="24px" width="24px">
+              <use href="./images/symbol-defs.svg#send"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>
