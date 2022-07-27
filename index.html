@@ -54,6 +54,12 @@
             >
           </li>
         </ul>
+        <button class="mobile-menu-btn" type="button" data-menu-button>
+          <svg class="mobile-menu-icon" width="40px" height="40px">
+            <use class="mobile-menu-burger" href="./images/symbol-defs.svg#burger-menu"></use>
+            <use class="mobile-menu-close" href="./images/symbol-defs.svg#close-icon"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -120,15 +126,51 @@
           <h2 class="section__title">Чем мы занимаемся</h2>
           <ul class="example__list list flex-container">
             <li class="flex-element example__item">
-              <img src="./images/box-1.jpg" alt="Пример работы 1" width="370" height="294" />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/box-1-d.webp 1x, ./images/box-1-d@2x.webp 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/box-1-d.jpg 1x, ./images/box-1-d@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img src="./images/box-1-d.jpg" alt="Пример работы 1" width="370" height="294" />
+              </picture>
               <p class="example__description">Десктопные приложения</p>
             </li>
             <li class="flex-element example__item">
-              <img src="./images/box-2.jpg" alt="Пример работы 2" width="370" height="294" />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/box-2-d.webp 1x, ./images/box-2-d@2x.webp 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/box-2-d.jpg 1x, ./images/box-2-d@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img src="./images/box-2-d.jpg" alt="Пример работы 2" width="370" height="294" />
+              </picture>
               <p class="example__description">Мобильные приложения</p>
             </li>
             <li class="flex-element example__item">
-              <img src="./images/box-3.jpg" alt="Пример работы 3" width="370" height="294" />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/box-3-d.webp 1x, ./images/box-3-d@2x.webp 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/box-3-d.jpg 1x, ./images/box-3-d@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img src="./images/box-3-d.jpg" alt="Пример работы 3" width="370" height="294" />
+              </picture>
               <p class="example__description">Дизайнерские решения</p>
             </li>
           </ul>
@@ -140,13 +182,45 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="command__list list flex-container">
             <li class="command__item flex-element">
-              <img
-                class="command__photo"
-                src="./images/employee-1.jpg"
-                alt="Сотрудник 1"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/employee-1-d.webp 1x, ./images/employee-1-d@2x.webp 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/employee-1-d.jpg 1x, ./images/employee-1-d@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/employee-1-t.webp1x, ./images/employee-1-t@2x.webp2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/employee-1-t.jpg 1x, ./images/employee-1-t@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/employee-1-m.webp1x, ./images/employee-1-m@2x.webp2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/employee-1-m.jpg 1x, ./images/employee-1-m@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img
+                  class="command__photo"
+                  src="images/employee-1-m.jpg"
+                  alt="Сотрудник 1"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="command__wrapper">
                 <h3 class="command__title">Игорь Демьяненко</h3>
                 <p class="command__role">Product Designer</p>
@@ -207,13 +281,45 @@
               </div>
             </li>
             <li class="command__item flex-element">
-              <img
-                class="command__photo"
-                src="./images/employee-2.jpg"
-                alt="Сотрудник 2"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/employee-2-d.webp 1x, ./images/employee-2-d@2x.webp 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/employee-2-d.jpg 1x, ./images/employee-2-d@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/employee-2-t.webp 1x, ./images/employee-2-t@2x.webp 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/employee-2-t.jpg 1x, ./images/employee-2-t@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/employee-2-m.webp 1x, ./images/employee-2-m@2x.webp 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/employee-2-m.jpg 1x, ./images/employee-2-m@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img
+                  class="command__photo"
+                  src="images/employee-2-m.jpg"
+                  alt="Сотрудник 2"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="command__wrapper">
                 <h3 class="command__title">Ольга Репина</h3>
                 <p class="command__role">Frontend Developer</p>
@@ -274,13 +380,45 @@
               </div>
             </li>
             <li class="command__item flex-element">
-              <img
-                class="command__photo"
-                src="./images/employee-3.jpg"
-                alt="Сотрудник 3"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/employee-3-d.webp 1x, ./images/employee-3-d@2x.webp 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/employee-3-d.jpg 1x, ./images/employee-3-d@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/employee-3-t.webp 1x, ./images/employee-3-t@2x.webp 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/employee-3-t.jpg 1x, ./images/employee-3-t@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/employee-3-m.webp 1x, ./images/employee-3-m@2x.webp 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/employee-3-m.jpg 1x, ./images/employee-3-m@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img
+                  class="command__photo"
+                  src="images/employee-3-m.jpg"
+                  alt="Сотрудник 3"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="command__wrapper">
                 <h3 class="command__title">Николай Тарасов</h3>
                 <p class="command__role">Marketing</p>
@@ -341,13 +479,45 @@
               </div>
             </li>
             <li class="command__item flex-element">
-              <img
-                class="command__photo"
-                src="./images/employee-4.jpg"
-                alt="Сотрудник 4"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/employee-4-d.webp 1x, ./images/employee-4-d@2x.webp 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/employee-4-d.jpg 1x, ./images/employee-4-d@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/employee-4-t.webp 1x, ./images/employee-4-t@2x.webp 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/employee-4-t.jpg 1x, ./images/employee-4-t@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/employee-4-m.webp 1x, ./images/employee-4-m@2x.webp 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/employee-4-m.jpg 1x, ./images/employee-4-m@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img
+                  class="command__photo"
+                  src="images/employee-4-m.jpg"
+                  alt="Сотрудник 4"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="command__wrapper">
                 <h3 class="command__title">Михаил Ермаков</h3>
                 <p class="command__role">UI Designer</p>
@@ -607,7 +777,7 @@
                 <use href="./images/symbol-defs.svg#vector"></use>
               </svg>
             </span>
-            <span class="text-agreement">Соглашаюсь с рассылкой и принимаю</span>
+            <span class="text-agreement">Соглашаюсь с рассылкой и принимаю </span>
             <a class="link-agreement" href="">Условия договора</a>
           </label>
           <button class="form-submit-btn" type="submit" disabled>Отправить</button>
@@ -615,8 +785,79 @@
       </div>
     </div>
     <!-- modal window end-->
+
+    <!-- mobile menu start-->
+    <div class="mobile-menu" data-menu>
+      <ul class="mobile-menu-nav list">
+        <li class="mobile-menu-nav-item">
+          <a class="mobile-menu-link current" href="./index.html">Студия </a>
+        </li>
+        <li class="mobile-menu-nav-item">
+          <a class="mobile-menu-link" href="./portfolio.html">Портфолио</a>
+        </li>
+        <li class="mobile-menu-nav-item">
+          <a class="mobile-menu-link" href="">Контакты</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-menu-contacts list">
+        <li class="mobile-menu-contacts-item">
+          <a class="mobile-menu-link accent" href=""> +38 096 111 11 11 </a>
+        </li>
+        <li class="mobile-menu-contacts-item">
+          <a class="mobile-menu-link" href="">info@devstudio.com</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-menu-socials list">
+        <li class="mobile-menu-socials-item">
+          <a
+            class="mobile-menu-socials-link"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="instagram"
+          >
+            Instagram
+          </a>
+        </li>
+        <li class="mobile-menu-socials-item">
+          <a
+            class="mobile-menu-socials-link"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="twitter"
+            >Twitter</a
+          >
+        </li>
+        <li class="mobile-menu-socials-item">
+          <a
+            class="mobile-menu-socials-link"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="facebook"
+            >Facebook</a
+          >
+        </li>
+        <li class="mobile-menu-socials-item">
+          <a
+            class="mobile-menu-socials-link"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="linkedin"
+            >LinkedIn</a
+          >
+        </li>
+      </ul>
+    </div>
+    <!-- mobile menu end-->
+
     <!-- JS start-->
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
     <!-- JS end-->
   </body>
 </html>

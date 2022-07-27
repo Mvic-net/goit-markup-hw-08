@@ -12,17 +12,39 @@
 
   &__wrapper {
     height: 120px;
-    width: 270px;
+    width: 100%;
     margin-bottom: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #f5f4fa;
     border-radius: 4px;
+
+    @media screen and (min-width: 480px) {
+      max-width: 450px;
+    }
+
+    @media screen and (min-width: 768px) {
+      max-width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      max-width: 270px;
+    }
   }
 
   &__list {
-    --items: 4;
+    @media screen and (min-width: 480px) {
+      --items: 1;
+    }
+
+    @media screen and (min-width: 768px) {
+      --items: 2;
+    }
+
+    @media screen and (min-width: 1200px) {
+      --items: 4;
+    }
   }
 }
 

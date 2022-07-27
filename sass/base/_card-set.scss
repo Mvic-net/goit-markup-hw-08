@@ -14,3 +14,17 @@
 
 /* Сетка на Flex-box
     END              */
+
+.pf-list-item {
+  @media screen and (min-width: 480px) {
+    --items: 1;
+  }
+
+  @media screen and (min-width: 768px) {
+    --items: 2;
+  }
+
+  @media screen and (min-width: 1200px) {
+    --items: 3;
+  }
+}

@@ -22,10 +22,37 @@
     cursor: pointer;
     transform: scale(1.1);
   }
+
+  & .list.contact-link.contact-flex {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: block;
+      align-items: center;
+      justify-content: center;
+      right: 0;
+    }
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
+  }
+}
+
+.header .list.contact-link > .item:not(:last-child) {
+  @media screen and (min-width: 768px) {
+    padding-bottom: 10px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 0px;
+  }
 }
 
 .site-link {
-  display: flex;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 
   & .link {
     position: relative;
@@ -85,7 +112,13 @@
 }
 
 .contact-flex > .item:not(:last-child) {
-  margin-right: 50px;
+  @media screen and (min-width: 768px) {
+    margin-right: 0px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 50px;
+  }
 }
 
 .contact-flex {

@@ -7,9 +7,17 @@
   padding-bottom: 60px;
   background-color: var(--hero-footer-color);
 
+  @media screen and (min-width: 768px) {
+    padding-top: 0px;
+  }
+
   & .container {
-    display: flex;
-    align-items: baseline;
+    display: block;
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: baseline;
+    }
   }
 
   &-title {
@@ -21,10 +29,34 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--light-color);
+
+    margin-top: 60px;
+
+    display: flex;
+    justify-content: center;
+
+    @media screen and (min-width: 768px) {
+      margin-top: 0px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      margin-top: 72px;
+    }
   }
 
   &-contacts {
-    margin-right: 70px;
+    @media screen and (min-width: 768px) {
+      display: inline-block;
+      margin-left: 76px;
+      margin-right: 165px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: block;
+      margin-right: 70px;
+      margin-left: 0px;
+    }
   }
 
   &-contact:not(:last-child) {
@@ -36,10 +68,21 @@
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+
+    display: flex;
+    justify-content: center;
   }
 
   &-social-link {
-    margin-right: 93px;
+    @media screen and (min-width: 768px) {
+      display: inline-block;
+      margin-top: 65px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 93px;
+      display: block;
+    }
   }
 
   & .link:hover,
@@ -55,11 +98,19 @@
 }
 
 .adds {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--light-color);
+
+  display: flex;
+  justify-content: center;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+    margin-bottom: 9px;
+  }
 }

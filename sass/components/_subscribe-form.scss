@@ -1,5 +1,5 @@
 .footer-subscribe-form {
-  display: block;
+  display: flex;
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 700;
@@ -9,14 +9,24 @@
   text-transform: uppercase;
 
   margin-bottom: 20px;
+  margin-top: 60px;
+
+  justify-content: center;
 
   color: var(--light-color);
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 0px;
+    justify-content: left;
+  }
 }
 
 .footer-form-email {
-  width: 358px;
+  width: 450px;
   height: 50px;
   margin-right: 12px;
+  padding-left: 16px;
+  margin-bottom: 20px;
   padding-left: 16px;
   background-color: transparent;
   outline: transparent;
@@ -34,6 +44,18 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: inline-block;
+    width: 358px;
+    margin-bottom: 0px;
+  }
+
   &::placeholder {
     font-family: var(--main-font);
     font-style: normal;
@@ -50,11 +72,13 @@
 }
 
 .footer-form-btn {
-  display: inline-flex;
-  position: absolute;
+  display: block;
   width: 200px;
   height: 50px;
   border-radius: 4px;
+
+  margin-left: auto;
+  margin-right: auto;
 
   align-items: center;
   justify-content: center;
@@ -68,6 +92,12 @@
 
   transform: scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 1200px) {
+    display: inline-flex;
+    position: absolute;
+    margin-left: 12px;
+  }
 
   &:hover,
   &:focus {

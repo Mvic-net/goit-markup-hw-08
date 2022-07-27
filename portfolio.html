@@ -24,6 +24,7 @@
     <!--custom styles end-->
     <title>Portfolio</title>
   </head>
+
   <body>
     <!--Шапка сайта-->
     <header class="header pf-header">
@@ -54,6 +55,12 @@
             >
           </li>
         </ul>
+        <button class="mobile-menu-btn" type="button" data-menu-button>
+          <svg class="mobile-menu-icon" width="40px" height="40px">
+            <use class="mobile-menu-burger" href="./images/symbol-defs.svg#burger-menu"></use>
+            <use class="mobile-menu-close" href="./images/symbol-defs.svg#close-icon"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!--герой-->
@@ -81,16 +88,66 @@
             </li>
           </ul>
           <!--Портфолио примеры работ-->
-          <ul class="list flex-container">
-            <li class="flex-element">
+          <ul class="pf-list list flex-container">
+            <li class="pf-list-item flex-element">
               <div class="pf-card">
-                <img
-                  class="img-example"
-                  src="./images/portfolio/img-1.jpg"
-                  alt="Пример веб-сайта"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/portfolio/img-1-desk.webp    1x,
+                      ./images/portfolio/img-1-desk@2x.webp 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/portfolio/img-1-desk.jpg    1x,
+                      ./images/portfolio/img-1-desk@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/portfolio/img-1-tab.webp    1x,
+                      ./images/portfolio/img-1-tab@2x.webp 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/portfolio/img-1-tab.jpg    1x,
+                      ./images/portfolio/img-1-tab@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/portfolio/img-1-mob.webp    1x,
+                      ./images/portfolio/img-1-mob@2x.webp 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/portfolio/img-1-mob.jpg    1x,
+                      ./images/portfolio/img-1-mob@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <img
+                    class="img-example"
+                    src="./images/portfolio/img-1-mob.jpg"
+                    alt="Пример работы"
+                    width="450"
+                    height="294"
+                  />
+                </picture>
                 <div class="pf-overlay is-hidden">
                   <p class="pf-description">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -104,15 +161,65 @@
                 <p class="about-example">Веб-сайт</p>
               </div>
             </li>
-            <li class="flex-element">
+            <li class="pf-list-item flex-element">
               <div class="pf-card">
-                <img
-                  class="img-example"
-                  src="./images/portfolio/img-2.jpg"
-                  alt="Пример Дизайна"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/portfolio/img-2-desk.webp    1x,
+                      ./images/portfolio/img-2-desk@2x.webp 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/portfolio/img-2-desk.jpg    1x,
+                      ./images/portfolio/img-2-desk@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/portfolio/img-2-tab.webp    1x,
+                      ./images/portfolio/img-2-tab@2x.webp 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/portfolio/img-2-tab.jpg    1x,
+                      ./images/portfolio/img-2-tab@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/portfolio/img-2-mob.webp    1x,
+                      ./images/portfolio/img-2-mob@2x.webp 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/portfolio/img-2-mob.jpg    1x,
+                      ./images/portfolio/img-2-mob@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <img
+                    class="img-example"
+                    src="./images/portfolio/img-2-mob.jpg"
+                    alt="Пример работы"
+                    width="450"
+                    height="294"
+                  />
+                </picture>
                 <div class="pf-overlay is-hidden">
                   <p class="pf-description">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -126,15 +233,65 @@
                 <p class="about-example">Дизайн</p>
               </div>
             </li>
-            <li class="flex-element">
+            <li class="pf-list-item flex-element">
               <div class="pf-card">
-                <img
-                  class="img-example"
-                  src="./images/portfolio/img-3.jpg"
-                  alt="Пример приложения"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/portfolio/img-3-desk.webp    1x,
+                      ./images/portfolio/img-3-desk@2x.webp 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/portfolio/img-3-desk.jpg    1x,
+                      ./images/portfolio/img-3-desk@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/portfolio/img-3-tab.webp    1x,
+                      ./images/portfolio/img-3-tab@2x.webp 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/portfolio/img-3-tab.jpg    1x,
+                      ./images/portfolio/img-3-tab@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/portfolio/img-3-mob.webp    1x,
+                      ./images/portfolio/img-3-mob@2x.webp 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/portfolio/img-3-mob.jpg    1x,
+                      ./images/portfolio/img-3-mob@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <img
+                    class="img-example"
+                    src="./images/portfolio/img-3-mob.jpg"
+                    alt="Пример работы"
+                    width="450"
+                    height="294"
+                  />
+                </picture>
                 <div class="pf-overlay is-hidden">
                   <p class="pf-description">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -148,15 +305,65 @@
                 <p class="about-example">Приложение</p>
               </div>
             </li>
-            <li class="flex-element">
+            <li class="pf-list-item flex-element">
               <div class="pf-card">
-                <img
-                  class="img-example"
-                  src="./images/portfolio/img-4.jpg"
-                  alt="Пример маркетинг"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/portfolio/img-4-desk.webp    1x,
+                      ./images/portfolio/img-4-desk@2x.webp 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/portfolio/img-4-desk.jpg    1x,
+                      ./images/portfolio/img-4-desk@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/portfolio/img-4-tab.webp    1x,
+                      ./images/portfolio/img-4-tab@2x.webp 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/portfolio/img-4-tab.jpg    1x,
+                      ./images/portfolio/img-4-tab@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/portfolio/img-4-mob.webp    1x,
+                      ./images/portfolio/img-4-mob@2x.webp 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/portfolio/img-4-mob.jpg    1x,
+                      ./images/portfolio/img-4-mob@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <img
+                    class="img-example"
+                    src="./images/portfolio/img-4-mob.jpg"
+                    alt="Пример работы"
+                    width="450"
+                    height="294"
+                  />
+                </picture>
                 <div class="pf-overlay is-hidden">
                   <p class="pf-description">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -170,15 +377,65 @@
                 <p class="about-example">Маркетинг</p>
               </div>
             </li>
-            <li class="flex-element">
+            <li class="pf-list-item flex-element">
               <div class="pf-card">
-                <img
-                  class="img-example"
-                  src="./images/portfolio/img-5.jpg"
-                  alt="Пример приложения"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/portfolio/img-5-desk.webp    1x,
+                      ./images/portfolio/img-5-desk@2x.webp 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/portfolio/img-5-desk.jpg    1x,
+                      ./images/portfolio/img-5-desk@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/portfolio/img-5-tab.webp    1x,
+                      ./images/portfolio/img-5-tab@2x.webp 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/portfolio/img-5-tab.jpg    1x,
+                      ./images/portfolio/img-5-tab@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/portfolio/img-5-mob.webp    1x,
+                      ./images/portfolio/img-5-mob@2x.webp 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/portfolio/img-5-mob.jpg    1x,
+                      ./images/portfolio/img-5-mob@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <img
+                    class="img-example"
+                    src="./images/portfolio/img-5-mob.jpg"
+                    alt="Пример работы"
+                    width="450"
+                    height="294"
+                  />
+                </picture>
                 <div class="pf-overlay is-hidden">
                   <p class="pf-description">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -192,15 +449,65 @@
                 <p class="about-example">Приложение</p>
               </div>
             </li>
-            <li class="flex-element">
+            <li class="pf-list-item flex-element">
               <div class="pf-card">
-                <img
-                  class="img-example"
-                  src="./images/portfolio/img-6.jpg"
-                  alt="Пример веб-сайта"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/portfolio/img-6-desk.webp    1x,
+                      ./images/portfolio/img-6-desk@2x.webp 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/portfolio/img-6-desk.jpg    1x,
+                      ./images/portfolio/img-6-desk@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/portfolio/img-6-tab.webp    1x,
+                      ./images/portfolio/img-6-tab@2x.webp 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/portfolio/img-6-tab.jpg    1x,
+                      ./images/portfolio/img-6-tab@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/portfolio/img-6-mob.webp    1x,
+                      ./images/portfolio/img-6-mob@2x.webp 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/portfolio/img-6-mob.jpg    1x,
+                      ./images/portfolio/img-6-mob@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <img
+                    class="img-example"
+                    src="./images/portfolio/img-6-mob.jpg"
+                    alt="Пример работы"
+                    width="450"
+                    height="294"
+                  />
+                </picture>
                 <div class="pf-overlay is-hidden">
                   <p class="pf-description">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -214,15 +521,65 @@
                 <p class="about-example">Веб-сайт</p>
               </div>
             </li>
-            <li class="flex-element">
+            <li class="pf-list-item flex-element">
               <div class="pf-card">
-                <img
-                  class="img-example"
-                  src="./images/portfolio/img-7.jpg"
-                  alt="Пример дизайна"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/portfolio/img-7-desk.webp    1x,
+                      ./images/portfolio/img-7-desk@2x.webp 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/portfolio/img-7-desk.jpg    1x,
+                      ./images/portfolio/img-7-desk@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/portfolio/img-7-tab.webp    1x,
+                      ./images/portfolio/img-7-tab@2x.webp 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/portfolio/img-7-tab.jpg    1x,
+                      ./images/portfolio/img-7-tab@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/portfolio/img-7-mob.webp    1x,
+                      ./images/portfolio/img-7-mob@2x.webp 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/portfolio/img-7-mob.jpg    1x,
+                      ./images/portfolio/img-7-mob@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <img
+                    class="img-example"
+                    src="./images/portfolio/img-7-mob.jpg"
+                    alt="Пример работы"
+                    width="450"
+                    height="294"
+                  />
+                </picture>
                 <div class="pf-overlay is-hidden">
                   <p class="pf-description">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -236,15 +593,65 @@
                 <p class="about-example">Дизайн</p>
               </div>
             </li>
-            <li class="flex-element">
+            <li class="pf-list-item flex-element">
               <div class="pf-card">
-                <img
-                  class="img-example"
-                  src="./images/portfolio/img-8.jpg"
-                  alt="Пример маркетинг"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/portfolio/img-8-desk.webp    1x,
+                      ./images/portfolio/img-8-desk@2x.webp 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/portfolio/img-8-desk.jpg    1x,
+                      ./images/portfolio/img-8-desk@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/portfolio/img-8-tab.webp    1x,
+                      ./images/portfolio/img-8-tab@2x.webp 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/portfolio/img-8-tab.jpg    1x,
+                      ./images/portfolio/img-8-tab@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/portfolio/img-8-mob.webp    1x,
+                      ./images/portfolio/img-8-mob@2x.webp 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/portfolio/img-8-mob.jpg    1x,
+                      ./images/portfolio/img-8-mob@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <img
+                    class="img-example"
+                    src="./images/portfolio/img-8-mob.jpg"
+                    alt="Пример работы"
+                    width="450"
+                    height="294"
+                  />
+                </picture>
                 <div class="pf-overlay is-hidden">
                   <p class="pf-description">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -258,15 +665,65 @@
                 <p class="about-example">Маркетинг</p>
               </div>
             </li>
-            <li class="flex-element">
+            <li class="pf-list-item flex-element">
               <div class="pf-card">
-                <img
-                  class="img-example"
-                  src="./images/portfolio/img-9.jpg"
-                  alt="Пример приложения"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/portfolio/img-9-desk.webp    1x,
+                      ./images/portfolio/img-9-desk@2x.webp 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/portfolio/img-9-desk.jpg    1x,
+                      ./images/portfolio/img-9-desk@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/portfolio/img-9-tab.webp    1x,
+                      ./images/portfolio/img-9-tab@2x.webp 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/portfolio/img-9-tab.jpg    1x,
+                      ./images/portfolio/img-9-tab@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/portfolio/img-9-mob.webp    1x,
+                      ./images/portfolio/img-9-mob@2x.webp 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/portfolio/img-9-mob.jpg    1x,
+                      ./images/portfolio/img-9-mob@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <img
+                    class="img-example"
+                    src="./images/portfolio/img-9-mob.jpg"
+                    alt="Пример работы"
+                    width="450"
+                    height="294"
+                  />
+                </picture>
                 <div class="pf-overlay is-hidden">
                   <p class="pf-description">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -370,5 +827,78 @@
         </form>
       </div>
     </footer>
+
+    <!-- mobile menu start-->
+    <div class="mobile-menu" data-menu>
+      <ul class="mobile-menu-nav list">
+        <li class="mobile-menu-nav-item">
+          <a class="mobile-menu-link" href="./index.html">Студия </a>
+        </li>
+        <li class="mobile-menu-nav-item">
+          <a class="mobile-menu-link current" href="./portfolio.html">Портфолио</a>
+        </li>
+        <li class="mobile-menu-nav-item">
+          <a class="mobile-menu-link" href="">Контакты</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-menu-contacts list">
+        <li class="mobile-menu-contacts-item">
+          <a class="mobile-menu-link accent" href=""> +38 096 111 11 11 </a>
+        </li>
+        <li class="mobile-menu-contacts-item">
+          <a class="mobile-menu-link" href="">info@devstudio.com</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-menu-socials list">
+        <li class="mobile-menu-socials-item">
+          <a
+            class="mobile-menu-socials-link"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="instagram"
+          >
+            Instagram
+          </a>
+        </li>
+        <li class="mobile-menu-socials-item">
+          <a
+            class="mobile-menu-socials-link"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="twitter"
+            >Twitter</a
+          >
+        </li>
+        <li class="mobile-menu-socials-item">
+          <a
+            class="mobile-menu-socials-link"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="facebook"
+            >Facebook</a
+          >
+        </li>
+        <li class="mobile-menu-socials-item">
+          <a
+            class="mobile-menu-socials-link"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="linkedin"
+            >LinkedIn</a
+          >
+        </li>
+      </ul>
+    </div>
+    <!-- mobile menu end-->
+
+    <!-- JS start-->
+    <script src="./js/menu.js"></script>
+    <!-- JS end-->
   </body>
 </html>

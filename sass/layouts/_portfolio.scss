@@ -50,7 +50,15 @@
 
 .filter-flex {
   display: flex;
-  justify-content: center;
+
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    row-gap: 15px;
+    column-gap: 8px;
+  }
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
 }
 
 .pf-card {
@@ -111,6 +119,13 @@
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
+
+  flex-grow: 1;
+}
+
+.pf-list-item {
+  display: flex;
+  flex-direction: column;
 }
 
 .example-title {
@@ -133,4 +148,13 @@
   letter-spacing: 0.03em;
   color: var(--main-color);
 }
+
+// .img-example {
+//   width: 450px;
+//   height: 294px;
+// }
 /*примеры в портфолио*/
+
+// .img-example{
+
+// }
