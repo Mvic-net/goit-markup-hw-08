@@ -8,6 +8,10 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--dark-color);
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .command__title {

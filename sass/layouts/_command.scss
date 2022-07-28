@@ -1,6 +1,10 @@
 .command {
-  padding-top: 94px;
+  padding-top: 60px;
   background-color: #f5f4fa;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+  }
 
   &__wrapper {
     padding-top: 30px;
